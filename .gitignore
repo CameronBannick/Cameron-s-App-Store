@@ -1,0 +1,8 @@
+# OS / editor junk
+Thumbs.db
+.DS_Store
+desktop.ini
+*.swp
+
+# Don't ignore APKs — they ARE the store content.
+# (Listed here as a reminder NOT to gitignore apps/*.apk)

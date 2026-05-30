@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b0f17" />
+  <title>Cameron's App Store</title>
+  <meta name="description" content="A personal app store for Cameron's vibe-coded Android apps." />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <img src="icons/icon.svg" alt="" class="brand-logo" width="36" height="36" />
+        <div class="brand-text">
+          <h1>Cameron&rsquo;s App Store</h1>
+          <p id="appCount" class="brand-sub">Loading apps&hellip;</p>
+        </div>
+      </div>
+      <button id="installStoreBtn" class="ghost-btn" hidden>Add to Home Screen</button>
+    </div>
+    <div class="search-wrap">
+      <input id="search" type="search" placeholder="Search apps&hellip;" autocomplete="off" aria-label="Search apps" />
+    </div>
+    <nav id="categories" class="categories" aria-label="Categories"></nav>
+  </header>
+
+  <main id="grid" class="grid" aria-live="polite"></main>
+
+  <div id="emptyState" class="empty" hidden>
+    <div class="empty-art">📦</div>
+    <h2>No apps here yet</h2>
+    <p>Add your first vibe-coded APK and it&rsquo;ll show up right here.</p>
+    <code>powershell ./add-app.ps1</code>
+  </div>
+
+  <footer class="footer">
+    <p>Built by Cameron · Sideload-friendly · <a href="#" id="helpLink">How to install</a></p>
+  </footer>
+
+  <!-- App detail / install sheet -->
+  <div id="sheet" class="sheet" hidden>
+    <div class="sheet-backdrop" data-close></div>
+    <div class="sheet-card" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+      <button class="sheet-close" data-close aria-label="Close">&times;</button>
+      <div class="sheet-head">
+        <img id="sheetIcon" class="sheet-icon" alt="" />
+        <div>
+          <h2 id="sheetTitle"></h2>
+          <p id="sheetMeta" class="sheet-meta"></p>
+        </div>
+      </div>
+      <p id="sheetDesc" class="sheet-desc"></p>
+      <div id="sheetShots" class="sheet-shots"></div>
+      <a id="sheetInstall" class="install-btn" href="#" download>Download APK</a>
+      <p class="sideload-note">
+        First time? Android will ask you to allow installs from this app/browser.
+        Tap <b>Settings → Allow</b>, then open the downloaded file.
+      </p>
+    </div>
+  </div>
+
+  <!-- Install help modal -->
+  <div id="helpModal" class="sheet" hidden>
+    <div class="sheet-backdrop" data-close></div>
+    <div class="sheet-card" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+      <button class="sheet-close" data-close aria-label="Close">&times;</button>
+      <h2 id="helpTitle">Installing apps on Android</h2>
+      <ol class="help-list">
+        <li>Tap an app, then <b>Download APK</b>.</li>
+        <li>When the download finishes, tap the file (or open it from your notifications).</li>
+        <li>The first time, Android asks permission to <b>install unknown apps</b> &mdash; toggle it on for your browser.</li>
+        <li>Tap <b>Install</b>. Done! The app lands in your app drawer.</li>
+      </ol>
+      <p class="sideload-note">This is normal &ldquo;sideloading.&rdquo; These are your own apps, so it&rsquo;s safe to allow.</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

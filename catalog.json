@@ -1,0 +1,17 @@
+{
+  "name": "Cameron's App Store",
+  "apps": [
+    {
+      "id": "sample-app",
+      "name": "Sample App",
+      "tagline": "Delete me once you add your first real app",
+      "description": "This is a placeholder entry so you can see how the store looks.\n\nDrop your APK into the apps/ folder and run add-app.ps1, or edit catalog.json by hand. Then delete this sample.",
+      "version": "1.0.0",
+      "category": "Demo",
+      "updated": "2026-05-29",
+      "icon": "icons/placeholder.svg",
+      "apk": "",
+      "screenshots": []
+    }
+  ]
+}
