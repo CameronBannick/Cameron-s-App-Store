@@ -26,6 +26,20 @@ one-time permission prompt).
 
 ---
 
+## Preview locally first (optional)
+
+Open a terminal in this folder and run:
+
+```powershell
+python preview-server.py
+```
+
+Then open **http://localhost:8080** in your browser. (A plain `index.html`
+double-click won't work — the store needs to be served over http to load
+`catalog.json`.)
+
+---
+
 ## First-time setup (publish to GitHub Pages)
 
 1. **Create a repo** on GitHub (e.g. `app-store`). Public is required for free Pages.
