@@ -1,17 +1,20 @@
-{
-  "name": "Cameron's App Store",
-  "apps": [
-    {
-      "id": "sample-app",
-      "name": "Sample App",
-      "tagline": "Delete me once you add your first real app",
-      "description": "This is a placeholder entry so you can see how the store looks.\n\nDrop your APK into the apps/ folder and run add-app.ps1, or edit catalog.json by hand. Then delete this sample.",
-      "version": "1.0.0",
-      "category": "Demo",
-      "updated": "2026-05-29",
-      "icon": "icons/placeholder.svg",
-      "apk": "",
-      "screenshots": []
-    }
-  ]
+﻿{
+    "name":  "Cameron\u0027s App Store",
+    "apps":  [
+                 {
+                     "id":  "video-game-life",
+                     "name":  "Video Game Life",
+                     "tagline":  "Level up your life across six categories",
+                     "description":  "A gamified personal-development tracker. Earn XP and level up across six life categories, log activities and daily habits, schedule events, and track vices with streaks. Works fully offline.",
+                     "version":  "1.0.0",
+                     "category":  "Lifestyle",
+                     "updated":  "2026-05-29",
+                     "icon":  "icons/video-game-life.png",
+                     "apk":  "apps/video-game-life-1.0.0.apk",
+                     "size":  "20.3 MB",
+                     "screenshots":  [
+
+                                     ]
+                 }
+             ]
 }
