@@ -181,11 +181,15 @@ body {
   align-items: flex-end;
   justify-content: center;
 }
+/* The hidden attribute must win over the display:flex above, otherwise the
+   modals show on load and can never be dismissed. */
+.sheet[hidden] { display: none; }
 .sheet-backdrop {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(2px);
+  cursor: pointer; /* iOS Safari only fires tap/click on "clickable" elements */
 }
 .sheet-card {
   position: relative;

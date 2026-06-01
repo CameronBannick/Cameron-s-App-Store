@@ -2,7 +2,7 @@
 // APKs and catalog.json are always fetched fresh (network-first) so new
 // apps and updates show up without bumping the cache version.
 
-const CACHE = 'cameron-store-v1';
+const CACHE = 'cameron-store-v2';
 const SHELL = [
   './',
   './index.html',
