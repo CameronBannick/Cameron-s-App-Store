@@ -27,6 +27,14 @@ body {
   margin: 0 auto;
   padding: 0 16px env(safe-area-inset-bottom);
   min-height: 100vh;
+  min-height: 100dvh;            /* avoids jump when mobile browser bars hide */
+  overflow-x: hidden;            /* belt-and-suspenders against side-scroll */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Snappier taps on mobile: no 300ms delay, no double-tap zoom on controls. */
+.card, .chip, .get-btn, .ghost-btn, .install-btn, .sheet-close, .footer a {
+  touch-action: manipulation;
 }
 
 /* Top bar */
@@ -85,7 +93,7 @@ body {
 .categories::-webkit-scrollbar { display: none; }
 .chip {
   flex: 0 0 auto;
-  padding: 7px 14px;
+  padding: 10px 16px;            /* bigger tap target (~40px tall) */
   border-radius: 999px;
   background: var(--bg-elev);
   border: 1px solid var(--border);
@@ -99,7 +107,9 @@ body {
 /* Grid */
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
+  /* minmax(0, 1fr) lets the column shrink below its content so cards never
+     overflow narrow screens (the no-wrap tagline was forcing them wider). */
+  grid-template-columns: minmax(0, 1fr);
   gap: 12px;
   padding: 4px 0 24px;
 }
@@ -113,6 +123,7 @@ body {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   cursor: pointer;
+  min-width: 0;                  /* allow the card to shrink within its track */
   transition: transform 0.12s ease, border-color 0.12s ease;
 }
 .card:active { transform: scale(0.985); border-color: var(--accent); }
@@ -126,7 +137,14 @@ body {
 }
 
 .card-body { flex: 1 1 auto; min-width: 0; }
-.card-title { font-size: 16px; font-weight: 600; margin: 0; }
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;           /* long app names truncate instead of pushing GET off */
+}
 .card-tag {
   margin: 3px 0 0;
   font-size: 13px;
@@ -142,7 +160,7 @@ body {
   background: var(--accent);
   color: #fff;
   border: none;
-  padding: 8px 18px;
+  padding: 10px 20px;            /* bigger, easier-to-hit tap target */
   border-radius: 999px;
   font-size: 14px;
   font-weight: 600;
@@ -203,7 +221,9 @@ body {
   box-shadow: var(--shadow);
   animation: slideUp 0.22s ease;
   max-height: 88vh;
+  max-height: 88dvh;             /* dynamic vh so the sheet isn't clipped by browser bars */
   overflow-y: auto;
+  overscroll-behavior: contain;  /* scrolling the sheet won't scroll the page behind it */
 }
 @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
 
@@ -213,9 +233,9 @@ body {
   background: var(--bg-card);
   border: 1px solid var(--border);
   color: var(--text);
-  width: 34px; height: 34px;
+  width: 40px; height: 40px;     /* larger, comfortable tap target */
   border-radius: 50%;
-  font-size: 20px;
+  font-size: 22px;
   cursor: pointer;
   line-height: 1;
 }
