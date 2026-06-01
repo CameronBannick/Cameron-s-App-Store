@@ -195,6 +195,17 @@ installStoreBtn.addEventListener('click', async () => {
 
 // Register service worker (offline shell + installability)
 if ('serviceWorker' in navigator) {
+  // If the worker itself ever updates, a new one will take control. Reload
+  // once so the page runs under it. Skipped on a first-ever visit (no prior
+  // controller) so new visitors don't get a needless double-load.
+  if (navigator.serviceWorker.controller) {
+    let reloaded = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (reloaded) return;
+      reloaded = true;
+      window.location.reload();
+    });
+  }
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('sw.js').catch(() => {});
   });
