@@ -3,15 +3,15 @@
     "apps":  [
                  {
                      "id":  "video-game-life",
-                     "name":  "Video Game Life",
+                     "name":  "LevelUp",
                      "tagline":  "Level up your life across six categories",
                      "description":  "A gamified personal-development tracker. Earn XP and level up across six life categories, log activities and daily habits, schedule events, and track vices with streaks. Works fully offline.",
-                     "version":  "1.1.0",
+                     "version":  "1.2.0",
                      "category":  "Lifestyle",
-                     "updated":  "2026-06-01",
+                     "updated":  "2026-06-02",
                      "icon":  "icons/video-game-life.png",
-                     "apk":  "apps/video-game-life-1.1.0.apk",
-                     "size":  "20.4 MB",
+                     "apk":  "apps/video-game-life-1.2.0.apk",
+                     "size":  "20.7 MB",
                      "screenshots":  [
 
                                      ]
