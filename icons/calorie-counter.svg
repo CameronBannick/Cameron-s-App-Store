@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141B27"/>
+      <stop offset="1" stop-color="#0B0F17"/>
+    </linearGradient>
+  </defs>
+
+  <!-- App background -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+
+  <!-- Calorie ring (signature element), ~78% with a gap at the top-right -->
+  <circle cx="256" cy="256" r="158" fill="none" stroke="#26303F" stroke-width="34"/>
+  <circle cx="256" cy="256" r="158" fill="none" stroke="#F97316" stroke-width="34"
+          stroke-linecap="round" stroke-dasharray="775 993"
+          transform="rotate(-90 256 256)"/>
+
+  <!-- "Fuel" bolt in the center -->
+  <path d="M286 132 L182 286 H242 L226 380 L330 222 H270 Z"
+        fill="#FFFFFF" stroke="#FFFFFF" stroke-width="6" stroke-linejoin="round"/>
+
+  <!-- Macro accent dots: protein / fat / carbs -->
+  <circle cx="214" cy="430" r="13" fill="#EF4444"/>
+  <circle cx="256" cy="430" r="13" fill="#FACC15"/>
+  <circle cx="298" cy="430" r="13" fill="#22D3EE"/>
+</svg>
