@@ -30,6 +30,21 @@
                      "screenshots":  [
 
                                      ]
+                 },
+                 {
+                     "id":  "pulse",
+                     "name":  "Pulse",
+                     "tagline":  "Whoop-style recovery, strain \u0026 sleep from your Pixel Watch",
+                     "description":  "A personal, Whoop-style health tracker for your Google Pixel Watch. Reads your HRV, resting heart rate, sleep stages and heart-rate zones from Health Connect to produce daily Recovery, Strain and Sleep scores, plus trends. Every score carries a confidence rating that tells you how much to trust it and why. Everything stays on your phone — no account, no cloud.",
+                     "version":  "1.0.0",
+                     "category":  "Health \u0026 Fitness",
+                     "updated":  "2026-06-07",
+                     "icon":  "icons/pulse.svg",
+                     "apk":  "apps/pulse-1.0.0.apk",
+                     "size":  "44.2 MB",
+                     "screenshots":  [
+
+                                     ]
                  }
              ]
 }
