@@ -21,12 +21,12 @@
                      "name":  "Calorie Counter",
                      "tagline":  "Scan barcodes to track calories, macros \u0026 micros",
                      "description":  "A personal calorie, macro and micronutrient tracker built to fuel training (BJJ, Muay Thai, S\u0026C). Search or scan foods across USDA, Open Food Facts, Edamam, Nutritionix and FatSecret; log against custom daily targets with a higher-carb Sunday refeed; and see your vitamins \u0026 minerals vs %DV. Snap a photo of an API key instead of typing it. Works offline; data stays on your phone.",
-                     "version":  "1.0.2",
+                     "version":  "1.0.3",
                      "category":  "Health \u0026 Fitness",
                      "updated":  "2026-06-12",
                      "icon":  "icons/calorie-counter.svg",
-                     "apk":  "apps/calorie-counter-1.0.2.apk",
-                     "size":  "42.4 MB",
+                     "apk":  "apps/calorie-counter-1.0.3.apk",
+                     "size":  "43.6 MB",
                      "screenshots":  [
 
                                      ]
