@@ -2,21 +2,6 @@
     "name":  "Cameron\u0027s App Store",
     "apps":  [
                  {
-                     "id":  "calorie-counter",
-                     "name":  "Calorie Counter",
-                     "tagline":  "Scan barcodes to track calories, macros \u0026 micros",
-                     "description":  "A personal calorie, macro and micronutrient tracker built to fuel training (BJJ, Muay Thai, S\u0026C). Search or scan foods across USDA, Open Food Facts, Edamam, Nutritionix and FatSecret; log against custom daily targets with a higher-carb Sunday refeed; and see your vitamins \u0026 minerals vs %DV. Snap a photo of an API key instead of typing it. Works offline; data stays on your phone.",
-                     "version":  "1.0.1",
-                     "category":  "Health \u0026 Fitness",
-                     "updated":  "2026-06-05",
-                     "icon":  "icons/calorie-counter.svg",
-                     "apk":  "apps/calorie-counter-1.0.1.apk",
-                     "size":  "42.4 MB",
-                     "screenshots":  [
-
-                                     ]
-                 },
-                 {
                      "id":  "video-game-life",
                      "name":  "LevelUp",
                      "tagline":  "Level up your life across nine categories",
@@ -27,6 +12,21 @@
                      "icon":  "icons/video-game-life.png",
                      "apk":  "apps/video-game-life-1.5.4.apk",
                      "size":  "26.4 MB",
+                     "screenshots":  [
+
+                                     ]
+                 },
+                 {
+                     "id":  "calorie-counter",
+                     "name":  "Calorie Counter",
+                     "tagline":  "Scan barcodes to track calories, macros \u0026 micros",
+                     "description":  "A personal calorie, macro and micronutrient tracker built to fuel training (BJJ, Muay Thai, S\u0026C). Search or scan foods across USDA, Open Food Facts, Edamam, Nutritionix and FatSecret; log against custom daily targets with a higher-carb Sunday refeed; and see your vitamins \u0026 minerals vs %DV. Snap a photo of an API key instead of typing it. Works offline; data stays on your phone.",
+                     "version":  "1.0.2",
+                     "category":  "Health \u0026 Fitness",
+                     "updated":  "2026-06-12",
+                     "icon":  "icons/calorie-counter.svg",
+                     "apk":  "apps/calorie-counter-1.0.2.apk",
+                     "size":  "42.4 MB",
                      "screenshots":  [
 
                                      ]
