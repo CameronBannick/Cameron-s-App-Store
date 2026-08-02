@@ -21,11 +21,11 @@
                      "name":  "SupplementTracker",
                      "tagline":  "Track your supplement and peptide doses",
                      "description":  "Schedule recurring supplement and peptide doses with local reminders, mark them taken each day, and review your dose history. Styled after the Solo Leveling System. Works fully offline.",
-                     "version":  "1.0.1",
+                     "version":  "1.0.2",
                      "category":  "Health",
-                     "updated":  "2026-07-20",
+                     "updated":  "2026-08-02",
                      "icon":  "icons/pep-in-your-step.png",
-                     "apk":  "apps/pep-in-your-step-1.0.1.apk",
+                     "apk":  "apps/pep-in-your-step-1.0.2.apk",
                      "size":  "4.2 MB",
                      "screenshots":  [
 
