@@ -17,21 +17,6 @@
                                      ]
                  },
                  {
-                     "id":  "study-planner",
-                     "name":  "StudyPlanner",
-                     "tagline":  "Plan training and study sessions, and feed them to LevelUp",
-                     "description":  "Plans and times the three areas it owns for LevelUp: Strength \u0026 Combat Skills, Tech Skills, and Study Math. Schedule sessions on a day or week grid, run a timer, set weekly training targets like 3 BJJ and 2 Muay Thai, and break study subjects into modules and lessons. Every completed session checks the matching activity off in LevelUp automatically. Styled after the Solo Leveling System. Works fully offline.",
-                     "version":  "1.0.1",
-                     "category":  "Productivity",
-                     "updated":  "2026-08-16",
-                     "icon":  "icons/study-planner.png",
-                     "apk":  "apps/study-planner-1.0.1.apk",
-                     "size":  "5.5 MB",
-                     "screenshots":  [
-
-                                     ]
-                 },
-                 {
                      "id":  "video-game-life",
                      "name":  "LevelUp",
                      "tagline":  "Level up your life across nine categories",
@@ -42,6 +27,21 @@
                      "icon":  "icons/video-game-life.png",
                      "apk":  "apps/video-game-life-1.5.18.apk",
                      "size":  "26.3 MB",
+                     "screenshots":  [
+
+                                     ]
+                 },
+                 {
+                     "id":  "study-planner",
+                     "name":  "StudyPlanner",
+                     "tagline":  "Plan training and study sessions, and feed them to LevelUp",
+                     "description":  "Plans and times the three areas it owns for LevelUp: Strength \u0026 Combat Skills, Tech Skills, and Study Math. Schedule sessions on a day or week grid, run a timer, set weekly training targets like 3 BJJ and 2 Muay Thai, and break study subjects into modules and lessons. Every completed session checks the matching activity off in LevelUp automatically. Styled after the Solo Leveling System. Works fully offline.",
+                     "version":  "1.0.2",
+                     "category":  "Productivity",
+                     "updated":  "2026-08-16",
+                     "icon":  "icons/study-planner.png",
+                     "apk":  "apps/study-planner-1.0.2.apk",
+                     "size":  "5.5 MB",
                      "screenshots":  [
 
                                      ]
